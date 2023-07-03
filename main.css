@@ -1125,14 +1125,15 @@ body {
 	padding: 20px;
 	color: white;
 	z-index: 100;
+
 }
-.select {
+.label select {
 	padding: 20px;
 	border: 1px solid;
-	/* box-shadow: 0 0 10px #c3b7b7; */
+	box-shadow: 0 0 10px #c3b7b7;
 	border-radius: 15px;
 	color: white;
-	background: red;
+	background: none;
 
 	font-size: 20px;
 	z-index: 100;
@@ -1142,11 +1143,10 @@ form {
 
 	flex-direction: column;
 }
-.label option {
+option {
 	z-index: 100;
 	color: black;
 	background: none;
-	white-space: nowrap;
 }
 
 /* label {
@@ -2133,7 +2133,7 @@ input {
 		font-size: 20px;
 		padding: 20px;
 	}
-	/* .label select {
+	.label select {
 		width: 100%;
 		padding: 20px;
 		border: 1px solid;
@@ -2144,7 +2144,7 @@ input {
 
 		font-size: 12px;
 		z-index: 10;
-	} */
+	}
 
 	.how {
 		display: flex;
