@@ -1129,10 +1129,10 @@ body {
 .label select {
 	padding: 20px;
 	border: 1px solid;
-	box-shadow: 0 0 10px #c3b7b7;
+	/* box-shadow: 0 0 10px #c3b7b7; */
 	border-radius: 15px;
 	color: white;
-	background: none;
+	background: red;
 
 	font-size: 20px;
 	z-index: 100;
@@ -1142,10 +1142,10 @@ form {
 
 	flex-direction: column;
 }
-option {
+.label option {
 	z-index: 100;
 	color: black;
-	background-color: red;
+	background: none;
 	white-space: nowrap;
 }
 
