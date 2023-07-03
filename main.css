@@ -1094,6 +1094,7 @@ body {
 .form-box-c label {
 	font-size: 23px;
 	padding: 20px;
+	color: white;
 }
 
 .form-box-c input:focus {
@@ -1107,7 +1108,7 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-top: 0;
-	color: black;
+	color: white;
 	z-index: 1;
 }
 .label {
@@ -1121,6 +1122,7 @@ body {
 .label label {
 	font-size: 23px;
 	padding: 20px;
+	color: white;
 }
 .label select {
 	padding: 20px;
@@ -1878,9 +1880,9 @@ input {
 	padding: 5px;
 	margin-bottom: 15px;
 	height: 141px;
+	color: white;
 }
 .label1 {
-	
 	margin-bottom: 50px;
 	
 }
