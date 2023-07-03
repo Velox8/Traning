@@ -18,9 +18,6 @@ html {
 }
 body {
 	font-family: 'Montserrat', sans-serif;
-	
-  
-
 }
 
 /* nav */
@@ -30,7 +27,8 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;  min-height: 100vh;
+	width: 100%;
+	min-height: 100vh;
 	height: 100%;
 	background-color: #ffffff;
 	display: flex;
@@ -39,15 +37,13 @@ body {
 	opacity: 1;
 	transition: opacity 1s ease-in-out;
 	z-index: 9999;
-  }
-  
-  #content {
+}
+
+#content {
 	visibility: hidden;
-  }
+}
 .preloader {
 	display: flex;
-
-	
 }
 .loader {
 	font-size: 60px;
@@ -1622,14 +1618,19 @@ input {
 		width: 100%;
 	}
 	.progress-bar-box {
+		position: relative;
 		width: 60%;
+		font-size: 20px;
 	}
-	.progress-bar-container {
-		width: 60%;
+	.progress-bar-label {
+		position: absolute;
+		top: -60px;
 	}
-	.progress-bar-container2 {
-		width: 60%;
+	.progress-bar-label2 {
+		position: absolute;
+		top: -60px;
 	}
+
 	.calc {
 		display: flex;
 		flex-direction: column;
@@ -1731,11 +1732,15 @@ input {
 		margin-top: 10px;
 	}
 	.progress-bar-container {
-		max-width: 20%;
+		min-width: 230px;
 	}
 	.progress-bar-container2 {
-		max-width: 20%;
+		min-width: 230px;
 	}
+	/* .progress-bar-lebel
+	{
+		
+	} */
 	.f {
 		width: 300px;
 	}
