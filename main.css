@@ -91,9 +91,9 @@ body {
 
 .burger-btn {
 	position: fixed;
-	top: 96px;
+	top: 82px;
 	right: 20px;
-	padding: 1em;
+	padding: 0.08em;
 	background: none;
 	border: 1px solid transparent;
 	cursor: pointer;
