@@ -1766,12 +1766,15 @@ input {
 		width: 300px;
 	}
 	.calc {
-		background-position: left 980px top;
+		background-position: left -260px top;
+
+		/* background-image: none;
+				background-color: #050505db; */
 	}
 	.container {
 		/* background-position: -390px center;
 		 */
-		 background-image: none;
+		background-image: none;
 		z-index: 10;
 	}
 	.wrapper {
@@ -1817,6 +1820,10 @@ input {
 
 	.form-box label {
 		margin-bottom: 10px;
+	}
+	.how {
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0.903);
 	}
 	.howWrapper {
 		width: 90% !important;
@@ -1883,12 +1890,10 @@ input {
 		max-width: 30%;
 	}
 	/* ffmi  */
-.calc {
-	background-image: none;
-		background-color: #050505db;
-}
+	.calc {
+		background-position: left -260px top;
+	}
 	.card {
-		
 		max-width: 60%;
 		width: 30%;
 
@@ -1937,10 +1942,7 @@ input {
 		max-width: 100%;
 		min-width: 100%;
 	}
-.how{
-	background-image: none;
-	background-color: rgba(0, 0, 0, 0.903);
-}
+
 	.howWrapper {
 		height: 600px;
 		max-height: 60px;
