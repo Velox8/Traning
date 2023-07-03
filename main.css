@@ -1797,7 +1797,8 @@ input {
 	}
 
 	.ffmiinput {
-		max-width: 90%;
+		max-width: 100%;
+		font-size: 15px;
 	}
 	.ffmiResult {
 		font-size: 20px;
