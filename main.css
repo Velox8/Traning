@@ -2133,7 +2133,7 @@ input {
 		font-size: 20px;
 		padding: 20px;
 	}
-	.label select {
+	/* .label select {
 		width: 100%;
 		padding: 20px;
 		border: 1px solid;
@@ -2144,7 +2144,7 @@ input {
 
 		font-size: 12px;
 		z-index: 10;
-	}
+	} */
 
 	.how {
 		display: flex;
