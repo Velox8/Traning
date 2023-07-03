@@ -1592,11 +1592,7 @@ input {
 		height: 800px;
 		width: 100%;
 	}
-	.cardButton {
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%);
-	}
+
 	.card {
 		height: 500px;
 		min-height: 600px;
@@ -1612,6 +1608,7 @@ input {
 		min-height: 600px;
 		min-width: 80%;
 		width: 100%;
+		margin: 0;
 	}
 	.howCardText {
 		height: 600px;
@@ -1778,6 +1775,7 @@ input {
 		z-index: 10;
 	}
 	.wrapper {
+		margin: 0;
 		min-width: 90%;
 		width: 90% !important;
 		max-width: 90% !important;
@@ -1786,7 +1784,14 @@ input {
 		width: 100%;
 		min-width: 100%;
 	}
+	.cardButton {
+		position: absolute;
+		top: 36px;
+		left: 50%;
+		transform: translate(-50%);
+	}
 	.cardText {
+		margin-top: 50px;
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -1826,11 +1831,13 @@ input {
 		background-color: rgba(0, 0, 0, 0.903);
 	}
 	.howWrapper {
+		margin: 0px;
 		width: 90% !important;
 		min-width: 90%;
 		max-width: 90% !important;
 	}
 	.howCard {
+		margin-top: 50px;
 		width: 80% !important;
 		min-width: 80%;
 		height: 650px;
@@ -1861,6 +1868,21 @@ input {
 	.resultC {
 		font-size: 39px;
 	}
+}
+.form-box-c {
+	padding: 5px;
+	margin: 5px;
+}
+
+.label  {
+	padding: 5px;
+	margin-bottom: 15px;
+	height: 141px;
+}
+.label1 {
+	
+	margin-bottom: 50px;
+	
 }
 
 @media (max-width: 810px) {
