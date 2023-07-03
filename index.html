@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidator formularza</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b654c37e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+    <button class="burger-btn">
+        <div class="burger-btn__box">
+            <div class="burger-btn__bars"></div>
+        </div>
+    </button>
+
+    <nav class="nav">
+        <div class="nav__items">
+            <a href="#title" class="nav__item">Home</a>
+            <a href="#bmi" class="nav__item">BMI</a>
+            <a href="#FFMI" class="nav__item">FFMI</a>
+            <a href="#Count" class="nav__item">Max weight</a>
+            <a href="#Calories" class="nav__item">BMR</a>
+            <a href="#Contact" class="nav__item">Kontakt</a>
+        </div>
+    </nav>
+
+
+    <nav class="nav_desktop">
+
+        
+        <a class="title1" href="#title">Max Weight</a>
+    </nav>
+    <header>
+        <div class="containerHeader" id="title">
+            
+            
+            
+            
+            <h1 class="h1Main"data-aos="zoom-in" data-aos-delay="50">Narzędzia przez które zmienisz swoją sywletkę !</h1>
+            <ul class="navUl">
+                <li class="navLi"><a data-aos="zoom-in" data-aos-delay="100"class="aNav" href="#bmi">BMI</a></li>
+                <li class="navLi"><a  data-aos="zoom-in" data-aos-delay="200"class="aNav"href="#FFMI">FFMI</a></li>
+                <li class="navLi"><a data-aos="zoom-in"data-aos-delay="300" class="aNav"href="#Count">PRZELICZNIK CIĘŻARU MAKSYMALNEGO</a></li>
+                <li class="navLi"><a data-aos="zoom-in"data-aos-delay="400"class="aNav"href="#Calories">ZAPOTRZEBOWANIE KALORYCZNE</a></li>
+                <li class="navLi"><a data-aos="zoom-in"data-aos-delay="500"class="aNav"href="#Contact">KONTAKT</a></li>
+            </ul>
+            <div class="shadow-img"></div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="sectionBmi" id="bmi">
+            <div class="lineB">
+                
+                
+                <a class="title" href="#title">BMI</a>
+            </div>
+            
+            
+            <div class="shadow-img"></div>
+            <div class="cardBmi"  data-aos="zoom-in"data-aos-delay="200">
+                <button class="cardButtonBmi hover-element"><span class="far fa-question-circle"></span> <span>Dlaczego
+                        BMI?
+                    </span></button>
+                <div class="cardTextBmi">
+                    <h2 class="cardBmih2"></h2>
+                    <h3 class="cardBmih2"></h3>
+                    <p class="cardP">BMI (Body Mass Index) to wskaźnik stosowany do oceny masy ciała osoby. Oblicza się
+                        go na podstawie wzoru, który uwzględnia wagę i wzrost danej osoby. BMI dostarcza ogólnej
+                        informacji na temat proporcji między masą ciała a wzrostem i może być używane jako narzędzie do
+                        wstępnej oceny ryzyka związanych z nadwagą lub niedowagą. Niemniej jednak, nie jest to wskaźnik
+                        idealny i nie uwzględnia innych czynników, takich jak rozkład masy ciała czy skład tkanki
+                        tłuszczowej.
+
+
+
+
+
+
+                    </p>
+
+                </div>
+            </div>
+
+
+
+            <div class="progress-bar-box">
+                <div class="progress-bar-container">
+                    <div class="progress-bar hover-element"></div>
+                    <div class="progress-bar-label"></div>
+                    <p class="height"  data-aos="zoom-in"data-aos-delay="100">Wzrost</p>
+                </div>
+                <div class="progress-bar-container2">
+                    <div class="progress-bar2 hover-element"></div>
+                    <div class="progress-bar-label2"></div>
+
+                    <p class="weight" data-aos="zoom-in"data-aos-delay="200">Waga</p>
+                    <p class="count00" data-aos="zoom-in"data-aos-delay="300">Przeciągnij paski lub kliknij na pasek</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <div class="lineB">
+
+
+            <a class="title" href="#title">FFMI</a>
+        </div>
+        <section class="calc" id="FFMI">
+
+            <!-- <div class="wrapper1">
+                <i class="fa-solid fa-dumbbell"></i>
+            </div> -->
+
+            <!-- <i class="fa-solid fa-calculator"></i> -->
+
+            <div class="shadow-imgFFMI"></div>
+            <div class="card one">
+                <button class="cardButton hover-element"><span class="far fa-question-circle"></span><span> Dlaczego
+                        FFMI?</span></button>
+                <div class="cardText">
+                   
+                    <p class="cardP">Przeliczanie FFMI (Fat-Free Mass Index) ma wiele zalet. Pozwala ocenić stosunek
+                        masy mięśniowej do całkowitej masy ciała, co daje informację o proporcjach naszego ciała.
+                        Regularne przeliczanie FFMI pozwala śledzić zmiany w masie mięśniowej i ocenić skuteczność
+                        treningu. Może służyć jako punkt odniesienia do ustalania celów treningowych, co motywuje nas do
+                        cięższych treningów. </p>
+                </div>
+
+            </div>
+
+            <div class="wrapper"  data-aos="zoom-in"data-aos-delay="200" >
+                <form class="ffmiForm">
+                    <h2 class="ffmiTitle">Kalkulator FFMI</h2>
+
+
+
+                    <div class="form-box">
+                        <label class="ffmilabel" for="height">Wzrost</label>
+                        <input class="ffmiinput" type="" id="height" placeholder="Podaj wzrost w cm">
+
+                    </div>
+                    <div class="form-box">
+                        <label class="ffmilabel" for="weight">Masa ciała</label>
+                        <input class="ffmiinput" type="" id="weight" placeholder="Podaj masę ciała w kg">
+
+                    </div>
+                    <div class="form-box">
+                        <label class="ffmilabel" for="Fat">Procent tkanki tłuszczowej</label>
+                        <input class="ffmiinput" type="" id="fat" placeholder="Podaj procent tanki tłuszczowej">
+
+                    </div>
+                    <div class="form-box1">
+                        <h2 class="ffmiResult">Wynik</h2>
+                        <p class="ffmi1">Wpisz liczby</p>
+
+                    </div>
+                    <div class="control-buttons">
+                        <button type="button" class="clear hover-element">Wyczyść</button>
+                        <button class="send hover-element">Oblicz</button>
+                    </div>
+                    <!-- <div class="popup"> -->
+                    <!-- <p>Formularz został poprawnie wysłany!</p> -->
+                    <!-- <button class="close">Zamknij</button> -->
+                    <!-- </div> -->
+
+                </form>
+
+            </div>
+            <div class="card one">
+                <button class="cardButton"><span class="far fa-question-circle"></span> <span>Jak liczyć
+                        FFMI?</span></button>
+                <div class="cardText">
+                
+                    <p class="cardPFFMI"> Przeliczanie FFMI pomaga lepiej zrozumieć naszą masę mięśniową i określić, czy
+                        jesteśmy w odpowiednim zakresie.
+                        FFMI 24 ciężko osiągnąć naturalnie.
+                    <ul class="FFMILI">
+
+                        <li>Poniżej 18 Poniżej średniej</li>
+                        <li> 18 - 20 Średnia</li>
+                        <li> 20 - 22 Powyżej średniej</li>
+                        <li> 22 - 23 Świetnie</li>
+                        <li> 24 - 26 Podejrzanie czy naturalnie</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper1">
+
+            </div>
+
+        </section>
+        <div class="lineB">
+
+
+            <a class="title" href="#title">Przelicznik ciężaru maksymalnego</a>
+        </div>
+        <section class="how" id="Count">
+            <div class="shadow-img"></div>
+            <div class="howCard one">
+                <button class="howCardButton"><span class="far fa-question-circle"></span> <span>Dlaczego Max
+                        rep?</span></button>
+                <div class="howCardText">
+             
+                    <p class="howCardP">Przelicznik ciężaru maksymalnego warto stosować, ponieważ pomaga monitorować
+                        postępy treningowe, umożliwia planowanie treningu opierając się na indywidualnym maksymalnym
+                        ciężarze, personalizuje trening dostosowując intensywność obciążenia, stanowi motywację do
+                        dążenia do zwiększenia maksymalnego ciężaru i pomaga w ustanawianiu konkretnych celów
+                        treningowych oraz śledzeniu ich realizacji.</p>
+                </div>
+            </div>
+            <div class="howWrapper" data-aos="zoom-in"data-aos-delay="200">
+                <form class="howform">
+                    <h2 class="howTitle">Przelicznik cięzaru maksymalnego</h2>
+                    <div class="form-box">
+                        <label class="howLabel" for="height">Ciężar w kg</label>
+                        <input class="howInput" type="" id="mWeight" placeholder="Podaj ciężar">
+                        <!-- <p class="error-text">error</p> -->
+                    </div>
+
+                    <div class="form-box">
+                        <label class="howLabel" for="Fat">Ilość powtórzeń</label>
+                        <input class="howInput" type="" id="reps" placeholder="Podaj ilośc powtórzeń">
+                        <!-- <p class="error-text">error</p> -->
+                    </div>
+                    <div class="form-box1">
+                        <h2 class="h2How">Wynik</h2>
+                        <p class="ffmi2">Wpisz liczby</p>
+                        <!-- <p class="error-text">error</p> -->
+                    </div>
+                    <div class="control-buttons">
+                        <button type="button" class="clear2">Wyczyść</button>
+                        <button class="send2">Oblicz</button>
+                    </div>
+                    <!-- <div class="popup"> -->
+                    <!-- <p>Formularz został poprawnie wysłany!</p> -->
+                    <!-- <button class="close">Zamknij</button> -->
+                    <!-- </div> -->
+                </form>
+            </div>
+            <div class="howCard one">
+                <button class="howCardButton"><span class="far fa-question-circle"></span> <span>Jak
+                        działa?</span></button>
+                <div class="howCardText">
+                  
+                    <p class="howCardP">Przelicznik ciężaru maksymalnego jest narzędziem, które służy do określania
+                        przewidywanego maksymalnego obciążenia, jakie możemy podnieść w danej technice ćwiczenia. Na
+                        podstawie ilości powtórzeń. Działa
+                        na podstawie podniesionego ciężaru w innej technice lub przy mniejszej liczbie powtórzeń.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="lineB">
+
+
+            <a class="title" href="#title">Kalkulator zapotrzebowania kalorycznego</a>
+        </div>
+        <section class="calories" id="Calories">
+            <h2 class="h2calories">Kalkulator zapotrzebowania kalorycznego</h2>
+
+            <div class="sex">
+
+                <i class="fa-solid fa-person"></i>
+                <i class="fa-sharp fa-solid fa-person-dress"></i>
+
+            </div>
+            <div class="box-p">
+                <p class="boxP">Wybierz płeć</p>
+            </div>
+            <div class="cal-box">
+                <div class="form-box-c"  data-aos="zoom-in"data-aos-delay="200">
+                    <label for="height">Wzrost</label>
+                    <input type="number-c" id="hCalories" placeholder="Podaj wzrost w cm">
+                    <p id="errorText" class="error-text" style="display: none;">Wprowadź poprawny format (tylko liczby).
+                    </p>
+                </div>
+                <div class="form-box-c"  data-aos="zoom-in"data-aos-delay="200">
+                    <label for="height">Waga</label>
+                    <input type="number-c" min="0" max="300" id="wCalories" placeholder="Podaj wagę w kg">
+                    <p id="errorText" class="error-text" style="display: none;">Wprowadź poprawny format (tylko liczby).
+                    </p>
+
+                </div>
+                <div class="form-box-c"  data-aos="zoom-in"data-aos-delay="200">
+                    <label for="height">Wiek</label>
+                    <input type="number-c" id="aCalories" placeholder="Podaj swój wiek">
+                    <p id="errorText" class="error-text" style="display: none;">Wprowadź poprawny format (tylko liczby).
+                    </p>
+                </div>
+            </div>
+
+            <div class="labels"  data-aos="zoom-in"data-aos-delay="300">
+                <div class="label">
+                    <form>
+                        <label for="opcja">Poziom aktywności fizycznej</label>
+                        <select id="optionA" name="opcja">
+                            <option value="opcja1">Wybierz aktywność</option>
+                            <option value="opcja2">Znikoma, mało ruchu w ciągu dnia</option>
+                            <option value="opcja3">Mało aktywna praca stojąca, ćwiczenia 2 razy w tyg.</option>
+                            <option value="opcja4">Średnio aktywna praca, ćwiczenia 3 razy w tygodniu</option>
+                            <option value="opcja5">Praca fizyczna, treningi 5 razy w tygodniu</option>
+                            <option value="opcja6">Sport zawodowy, treningi 5-6 razy w tyg.</option>
+                        </select>
+                        <!-- <input type="submit" value="Wyślij"> -->
+                    </form>
+
+                </div>
+                <div class="label">
+                    <form>
+                        <label for="opcja">Cel</label>
+                        <select id="optionT" name="opcja">
+                            <option value="opcja1">Wybierz cel</option>
+                            <option value="opcja8">Chcę schudnąć</option>
+                            <option value="opcja11">Rekompozycja sylwetki</option>
+                            <option value="opcja9">Chę utrzymać wagę</option>
+                            <option value="opcja12">Sucha masa mięśniowa</option>
+                            <option value="opcja10">Chcę przytyć</option>
+
+                        </select>
+                        <!-- <input type="submit" value="Wyślij"> -->
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="result"  data-aos="zoom-in"data-aos-delay="200">
+
+                <button class="resultb1"  data-aos="zoom-in"data-aos-delay="200">Oblicz
+                    <button class="resultB"  data-aos="zoom-in"data-aos-delay="200">Oblicz
+                        <button class="resultE"  data-aos="zoom-in"data-aos-delay="200">WYbierz płeć
+
+                        </button>
+                        <p class="resultC"  data-aos="zoom-in"data-aos-delay="200">Wynik</p>
+            </div>
+
+            <div class="containerTextCalories">
+                <div class="textCalories"  data-aos="zoom-in"data-aos-delay="200">
+                    <h2 class="h2TextCalories">Dlaczego warto wyliczyć zapotrzebowanie kaloryczne?</h2>
+                    <p class="caloriesWhy">Wyliczenie zapotrzebowania kalorycznego ma wiele korzyści i jest ważne z
+                        kilku powodów:
+
+
+
+
+
+                    <ul class="caloriesUl">
+                        <li class="caloriesLi"> Kontrola wagi: Wyliczenie zapotrzebowania kalorycznego pozwala określić
+                            ilość kalorii potrzebną do utrzymania, zyskania lub utraty wagi. Jeśli chcesz schudnąć lub
+                            zwiększyć masę mięśniową, odpowiednie dostosowanie spożycia kalorii jest kluczowe.</li>
+                        <li class="caloriesLi"> Zdrowie i dobry stan odżywienia: Wyliczenie zapotrzebowania kalorycznego
+                            pozwala dostosować dietę do indywidualnych potrzeb. Pozwala na spożywanie odpowiedniej
+                            ilości składników odżywczych, witamin i minerałów, aby utrzymać dobrą kondycję zdrowotną.
+                        </li>
+                        <li class="caloriesLi"> Efektywność treningu: Wyliczenie zapotrzebowania kalorycznego pozwala na
+                            dostosowanie diety do celów treningowych. Odpowiednie spożycie kalorii może zwiększyć
+                            energię, wytrzymałość i wydajność w trakcie treningów.</li>
+                        <li class="caloriesLi"> Kontrola apetytu: Wyliczenie zapotrzebowania kalorycznego może pomóc w
+                            lepszym zrozumieniu własnego apetytu i uczucia głodu. Pozwala to na utrzymanie równowagi
+                            między spożyciem a spalaniem kalorii, co może przyczynić się do zdrowej relacji z jedzeniem.
+                        </li>
+                        <li class="caloriesLi">
+                            Indywidualizacja diety: Każda osoba ma inne zapotrzebowanie kaloryczne, wynikające z jej
+                            płci, wieku, masy ciała, poziomu aktywności fizycznej i innych czynników. Wyliczenie
+                            zapotrzebowania kalorycznego pozwala na spersonalizowanie diety i dostosowanie jej do
+                            własnych potrzeb.</li>
+
+                    </ul>
+
+                    <p class="caloriesWhy2"> Podsumowując, wyliczenie zapotrzebowania kalorycznego jest istotne dla
+                        utrzymania zdrowej wagi, zapewnienia odpowiedniej ilości składników odżywczych, efektywności
+                        treningu i kontroli apetytu. Pomaga także w indywidualizacji diety i dostosowaniu jej do
+                        indywidualnych potrzeb.</p>
+
+
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="shadow-img-C"></div>
+
+
+        </section>
+
+
+
+        <div class="lineB">
+
+
+            <a class="title" href="#title">Kontakt</a>
+        </div>
+        <section class="contact" id="Contact">
+
+
+            <div class="comercialText">
+                <p class="comercialP">
+                Zapraszam Cię do skorzystania z naszych usług, aby razem rozpocząć trening, przygotować spersonalizowaną rozpiskę diety i zapewnić Ci indywidualne podejście. Nasze doświadczenie i wiedza pozwolą Ci osiągnąć Twoje cele fitnessowe w sposób efektywny i zrównoważony. Dzięki naszej pomocy będziesz mógł/a wypracować zdrowe nawyki żywieniowe, poprawić swoją kondycję fizyczną i zyskać pełną pewność siebie. Skontaktuj się z nami już dzisiaj, aby zacząć swoją drogę do zdrowia i dobrej formy!
+                </p>
+            </div>
+
+            <div class="shadowmedia"></div>
+            <h2 class="h2Contact"></h2>
+
+            <div class="contactContainer">
+
+                <div class="mText">
+
+                    <h3>Maksymilian</h3>
+                    <p>793-428-923</p>
+                    <p>Szczecin</p>
+                </div>
+
+
+
+
+
+                <div class="social-media">
+
+                    <h3>Social media</h3>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <!-- <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                </div>
+
+
+
+
+                <div class="eText">
+                    <h3>Mateusz</h3>
+                    <p>000-000-000</p>
+                    <p>Szczecin</p>
+                </div>
+                
+            </div>
+
+         
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="foter_bootom-text">&copy <span class="footer_year"></span> M&E Corporation</p>
+    </footer>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ startEvent: 'DOMContentLoaded',
+      offset: 200,
+      once: true});
+      </script>
+    <script src="./thisjs.js"></script>
+</body>
+
+</html>
