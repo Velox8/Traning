@@ -1725,8 +1725,8 @@ input {
 	.sectionBmi {
 		display: flex;
 		justify-content: center;
-		background-position: top;
-		background-size: cover;
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0.898);
 	}
 
 	.progress-bar-box {
@@ -1769,7 +1769,9 @@ input {
 		background-position: left 980px top;
 	}
 	.container {
-		background-position: -390px center;
+		/* background-position: -390px center;
+		 */
+		 background-image: none;
 		z-index: 10;
 	}
 	.wrapper {
@@ -1797,8 +1799,8 @@ input {
 	}
 
 	.ffmiinput {
-		max-width: 100%;
-		font-size: 15px;
+		min-width: 100%;
+		font-size: 20px;
 	}
 	.ffmiResult {
 		font-size: 20px;
@@ -1881,8 +1883,12 @@ input {
 		max-width: 30%;
 	}
 	/* ffmi  */
-
+.calc {
+	background-image: none;
+		background-color: #050505db;
+}
 	.card {
+		
 		max-width: 60%;
 		width: 30%;
 
@@ -1931,7 +1937,10 @@ input {
 		max-width: 100%;
 		min-width: 100%;
 	}
-
+.how{
+	background-image: none;
+	background-color: rgba(0, 0, 0, 0.903);
+}
 	.howWrapper {
 		height: 600px;
 		max-height: 60px;
