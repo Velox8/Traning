@@ -1738,6 +1738,20 @@ input {
 		height: 500px;
 		margin-top: 10px;
 	}
+	.progress-bar-box {
+		position: relative;
+		width: 60%;
+		font-size: 20px;
+	}
+	.progress-bar-label {
+		position: absolute;
+		top: -60px;
+	}
+	.progress-bar-label2 {
+		position: absolute;
+		top: -60px;
+	}
+
 	.progress-bar-container {
 		min-width: 230px;
 	}
