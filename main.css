@@ -1717,7 +1717,8 @@ input {
 	.sectionBmi {
 		display: flex;
 		justify-content: center;
-		background-position: right 830px top;
+		background-position: top;
+		background-size: cover;
 	}
 
 	.progress-bar-box {
