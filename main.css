@@ -18,12 +18,40 @@ html {
 }
 body {
 	font-family: 'Montserrat', sans-serif;
+	
+  
+
 }
 
 /* nav */
 
 /* nav nav  */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;  min-height: 100vh;
+	height: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+	z-index: 9999;
+  }
+  
+  #content {
+	visibility: hidden;
+  }
+.preloader {
+	display: flex;
 
+	
+}
+.loader {
+	font-size: 60px;
+}
 .white-block {
 	position: absolute;
 	height: 40px;
@@ -173,7 +201,6 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: start;
-	
 
 	padding: 6px;
 	z-index: 1000;
@@ -183,11 +210,11 @@ body {
 }
 .lineB {
 	position: relative;
-	
+
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	
+
 	padding: 6px;
 	z-index: 1000;
 	background-image: linear-gradient(45deg, rgb(17, 18, 19), rgb(8, 8, 8));
@@ -201,9 +228,8 @@ body {
 	font-weight: bold;
 	font-size: 30px;
 
-	
 	color: white;
-	
+
 	z-index: 20;
 }
 .containerHeader {
@@ -216,7 +242,7 @@ body {
 
 	width: 100%;
 	background-image: url(./img/dumbell-3435990_1920.jpg);
-	
+
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -226,7 +252,7 @@ body {
 
 .title1 {
 	display: flex;
-   
+
 	margin-left: 50px;
 	text-decoration: none;
 
@@ -244,7 +270,7 @@ body {
 .title {
 	display: flex;
 	text-align: center;
-	
+
 	text-decoration: none;
 	text-transform: uppercase;
 	color: rgb(216, 208, 208);
@@ -277,8 +303,6 @@ body {
 }
 
 .navUl {
-	
-	
 	padding: 20px;
 
 	color: white;
@@ -402,7 +426,6 @@ body {
 	transition: 0.5s;
 	z-index: 9;
 }
-
 
 .progress-bar-box {
 	width: 80%;
@@ -838,7 +861,6 @@ body {
 .FFMILI li {
 	font-size: 15px;
 }
-
 
 /* how strong  */
 
@@ -1531,9 +1553,6 @@ input {
 	transition: color 0.5s;
 }
 .social-media a:hover {
-
-
-
 	color: rgb(43, 149, 215);
 }
 
@@ -1551,19 +1570,16 @@ input {
 	text-align: center;
 }
 @media (max-width: 428px) {
-	
 	.containerHeader {
 		height: 800px;
 	}
 	.navUl {
 		margin-top: -50px;
 		margin-left: 50px;
-		
 	}
 	.aNav {
 		padding: 5px;
 		font-size: 18px;
-		
 	}
 	.cardButtonBmi {
 		position: absolute;
@@ -1692,9 +1708,8 @@ input {
 		justify-content: center;
 	}
 	.title1 {
-		
 		margin-left: 0;
-			}
+	}
 	.count00 {
 		font-size: 23px;
 	}
@@ -1702,7 +1717,7 @@ input {
 	.sectionBmi {
 		display: flex;
 		justify-content: center;
-		background-position: right 830px top
+		background-position: right 830px top;
 	}
 
 	.progress-bar-box {
@@ -1744,13 +1759,6 @@ input {
 		justify-content: flex-end;
 	}
 
-
-
-
-
-	
-
-
 	.send,
 	.clear,
 	.close {
@@ -1789,7 +1797,6 @@ input {
 		width: 80% !important;
 		min-width: 80%;
 		height: 650px;
-		
 	}
 	.howCardButton {
 		position: absolute;
@@ -1820,8 +1827,9 @@ input {
 }
 
 @media (max-width: 810px) {
-	
-	
+	.loader {
+		font-size: 36px;
+	}
 	.nav__item {
 		margin-left: 80px;
 		font-size: 36px;
@@ -1950,17 +1958,15 @@ input {
 		margin: 50px;
 	}
 
-
-.contactContainer{
-	display: flex;
-	flex-direction: column;
-}
+	.contactContainer {
+		display: flex;
+		flex-direction: column;
+	}
 	.social-media {
 		margin-top: 10px;
 		margin-bottom: 10px;
 		font-size: 23px;
 	}
-	
 }
 @media (max-width: 992px) {
 	.clear,
@@ -2249,5 +2255,3 @@ input {
 		transform: translate(-50%);
 	}
 }
-
-

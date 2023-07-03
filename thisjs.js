@@ -51,7 +51,37 @@ const values = {
 
 
 };
-//  nav nav 
+window.addEventListener("load", function() {
+	setTimeout(function() {
+	  document.getElementById("preloader").style.opacity = 0;
+	  setTimeout(function() {
+		document.getElementById("preloader").style.display = "none";
+		document.getElementById("content").style.visibility = "visible";
+	  }, 500); // Opóźnienie przed ukryciem preloadera
+	}, 3000); // Czas w milisekundach - w tym przykładzie 3 sekundy
+  });
+  const loader = document.querySelector('.loader');
+
+
+let pvalue = loader.textContent;
+
+let index = 0;
+let speed = 80;
+let timeut;
+
+const writingAnimation = () => {
+  loader.innerHTML = pvalue.slice(0, index);
+  index++;
+
+  if (index > pvalue) return;
+    
+	timeout = setTimeout(writingAnimation, speed);
+  }
+
+
+writingAnimation();
+
+  
 const handleNav = () => {
     nav.classList.toggle('nav--active')
 
