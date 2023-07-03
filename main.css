@@ -1145,7 +1145,7 @@ form {
 option {
 	z-index: 100;
 	color: black;
-	background: none;
+	background-color: red;
 	white-space: nowrap;
 }
 
