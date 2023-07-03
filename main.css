@@ -1126,7 +1126,7 @@ body {
 	color: white;
 	z-index: 100;
 }
-.label select {
+.select {
 	padding: 20px;
 	border: 1px solid;
 	/* box-shadow: 0 0 10px #c3b7b7; */
