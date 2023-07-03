@@ -1127,6 +1127,7 @@ body {
 	z-index: 100;
 }
 .select {
+	display: none;
 	padding: 20px;
 	border: 1px solid;
 	/* box-shadow: 0 0 10px #c3b7b7; */
