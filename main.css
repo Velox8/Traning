@@ -1631,6 +1631,13 @@ input {
 		top: -60px;
 	}
 
+	.progress-bar-container {
+		min-width: 230px;
+	}
+	.progress-bar-container2 {
+		min-width: 230px;
+	}
+
 	.calc {
 		display: flex;
 		flex-direction: column;
