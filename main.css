@@ -1141,7 +1141,7 @@ form {
 	flex-direction: column;
 }
 option {
-	color: white;
+	color: black;
 	background: none;
 }
 
@@ -1876,7 +1876,7 @@ input {
 	margin: 5px;
 }
 
-.label  {
+.label {
 	padding: 5px;
 	margin-bottom: 15px;
 	height: 141px;
@@ -1884,7 +1884,6 @@ input {
 }
 .label1 {
 	margin-bottom: 50px;
-	
 }
 
 @media (max-width: 810px) {
