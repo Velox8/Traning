@@ -1749,9 +1749,34 @@ input {
 }
 
 @media (max-width: 576px) {
+	.containerHeader {
+		display: flex;
+		flex-direction: column;
+		height: 1200px;
+	}
 	.nav_desktop {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+	}
+	.h1Main{
+		font-size: 30px;
+		
+		padding: 10px;
+		margin: 20px;
+		margin-top: -200px;
+	}
+	.navUl {
+		padding: 0;
+		margin-top: -600px;
+		
+	}
+	.p-header{
+		left: 10%;
+		top: 950px;
+		width: 80%;
+		font-size: 20px;
+		line-height: 1;
+		z-index: 10;
 	}
 	.title1 {
 		margin-left: 0;
