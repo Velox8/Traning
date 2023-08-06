@@ -259,7 +259,7 @@ body {
 	opacity: 0;
 	object-fit: cover;
 	object-position: center;
-	transition: opacity 2s ease; /* Czas trwania animacji i funkcja przejścia (easing) */
+	transition: opacity 3s ease; /* Czas trwania animacji i funkcja przejścia (easing) */
 	z-index: 1;
 }
 
