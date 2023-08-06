@@ -36,17 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	const navBtnBars = document.querySelector('.burger-btn__bars');
 	// liczenie
 	const imgs = document.querySelectorAll('.img');
-	const pHeader = document.querySelector('.p-header')
+	const pHeader = document.querySelector('.p-header');
 
-
-	let indexx = 1
+	let indexx = 1;
 	let timeoutt;
 
-
-	
-	let inputValue = ' Zmień swoją sylwetkę! Mogę Cię przeprowadzić przez cały proces od ułożenia planu treningowego przez dietę do wspaniałych efektów. Wszystko zależy od Twojej determinacji. Mogę Ci pomóc niezależnie od Twojego stażu treningowego. ';
+	let inputValue =
+		' Zmień swoją sylwetkę! Mogę Cię przeprowadzić przez cały proces od ułożenia planu treningowego przez dietę do wspaniałych efektów. Wszystko zależy od Twojej determinacji. Mogę Ci pomóc niezależnie od Twojego stażu treningowego. ';
 	const textAnimation = () => {
-		let speed = 50 
+		let speed = 50;
 		pHeader.innerHTML = inputValue.slice(0, indexx);
 		indexx++;
 		if (indexx > inputValue.length) {
@@ -63,14 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	setTimeout(textAnimation, 3500);
 	// const btn = document.querySelector('.btn');
 	let textCard = 1;
-	
+
 	// let speed = 120;
 	// let index = 0;
-	
+
 	let textValues = Array.from(imgs).map((img) => img.textContent);
-	
-	
-	
+
 	const changeTextCard = () => {
 		textCard++;
 		if (textCard >= 6) {
@@ -86,16 +82,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	};
-	
 
-	
 	setInterval(changeTextCard, 6000);
 	// textAnimation();
 	const values = {
 		opcja2: 1.2,
 		opcja3: 1.375,
-		opcja4: 1.41,
-		opcja5: 1.725,
+		opcja4: 1.45,
+		opcja5: 1.65,
 		opcja6: 1.9,
 		opcja8: 0.8,
 		opcja9: 1,
@@ -1184,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (isNaN(result)) {
 			resultC.textContent = 'Wprowadź tylko liczby';
 		} else {
-			resultC.textContent = roundedResult + ' Kcal';
+			resultC.textContent = 'Potrzebujesz ' + roundedResult + ' Kcal';
 		}
 	};
 	resultB.addEventListener('click', printCountBMRM);
