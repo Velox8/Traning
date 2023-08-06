@@ -35,8 +35,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	const allNavItems = document.querySelectorAll('.nav__item');
 	const navBtnBars = document.querySelector('.burger-btn__bars');
 	// liczenie
+	
 	const imgs = document.querySelectorAll('.img');
 	const pHeader = document.querySelector('.p-header');
+	
+	const scaleImagesOnScroll1 = () => {
+		imgs.forEach((img) => {
+			const imageTop = img.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+
+			// Oblicz stosunek przewinięcia strony do pozycji zdjęcia
+			const scrollRatio = (windowHeight - imageTop) / windowHeight;
+
+			// Minimalna i maksymalna skala, jaką chcemy osiągnąć
+			const minScale = 1;
+			const maxScale = 1.08;
+			// Interpolacja liniowa, aby obliczyć skalę w zakresie od minScale do maxScale
+			let scale = minScale + scrollRatio * (maxScale - minScale);
+			scale = Math.max(scale, 1);
+
+			// Zastosuj skalę dla obrazu
+			img.style.transform = `scale(${scale})`;
+			// shadowImgAbout.style.transform = `scale(${scale})`;
+		});
+	};
+	window.addEventListener('scroll', scaleImagesOnScroll1);
 
 	let indexx = 1;
 	let timeoutt;
