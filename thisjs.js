@@ -35,7 +35,62 @@ document.addEventListener('DOMContentLoaded', function () {
 	const allNavItems = document.querySelectorAll('.nav__item');
 	const navBtnBars = document.querySelector('.burger-btn__bars');
 	// liczenie
+	const imgs = document.querySelectorAll('.img');
+	const pHeader = document.querySelector('.p-header')
 
+
+	let indexx = 1
+	let timeoutt;
+
+
+	
+	let inputValue = ' Zmień swoją sylwetkę! Mogę Cię przeprowadzić przez cały proces od ułożenia planu treningowego przez dietę do wspaniałych efektów. Wszystko zależy od Twojej determinacji. Mogę Ci pomóc niezależnie od Twojego stażu treningowego. ';
+	const textAnimation = () => {
+		let speed = 50 
+		pHeader.innerHTML = inputValue.slice(0, indexx);
+		indexx++;
+		if (indexx > inputValue.length) {
+			indexx = 0;
+			clearTimeout(timeoutt);
+			setTimeout(() => {
+				timeout = setTimeout(textAnimation, speed);
+			}, 8000);
+		} else {
+			clearTimeout(timeoutt);
+			timeoutt = setTimeout(textAnimation, speed);
+		}
+	};
+	setTimeout(textAnimation, 3500);
+	// const btn = document.querySelector('.btn');
+	let textCard = 1;
+	
+	// let speed = 120;
+	// let index = 0;
+	
+	let textValues = Array.from(imgs).map((img) => img.textContent);
+	
+	
+	
+	const changeTextCard = () => {
+		textCard++;
+		if (textCard >= 6) {
+			textCard = 1;
+		}
+		imgs.forEach((img) => {
+			if (textCard == img.dataset.number) {
+				img.classList.add('active-img');
+				clearTimeout();
+				//   textAnimation();
+			} else {
+				img.classList.remove('active-img');
+			}
+		});
+	};
+	
+
+	
+	setInterval(changeTextCard, 6000);
+	// textAnimation();
 	const values = {
 		opcja2: 1.2,
 		opcja3: 1.375,
@@ -53,9 +108,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.getElementById('preloader').style.opacity = 0;
 			setTimeout(function () {
 				document.getElementById('preloader').style.display = 'none';
-				document.getElementById('content').style.visibility = 'visible';
+				// document.getElementById('content').style.visibility = 'visible';
 			}, 500); // Opóźnienie przed ukryciem preloadera
-		}, 3000); // Czas w milisekundach - w tym przykładzie 3 sekundy
+		}, 1500); // Czas w milisekundach - w tym przykładzie 3 sekundy
 	});
 	const loader = document.querySelector('.loader');
 
@@ -63,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	let index = 0;
 	let speed = 80;
-	let timeut;
+	let timeout;
 
 	const writingAnimation = () => {
 		loader.innerHTML = pvalue.slice(0, index);
