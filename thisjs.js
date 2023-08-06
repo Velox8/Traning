@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	const allNavItems = document.querySelectorAll('.nav__item');
 	const navBtnBars = document.querySelector('.burger-btn__bars');
 	// liczenie
-	
+
 	const imgs = document.querySelectorAll('.img');
 	const pHeader = document.querySelector('.p-header');
-	
+
 	const scaleImagesOnScroll1 = () => {
 		imgs.forEach((img) => {
 			const imageTop = img.getBoundingClientRect().top;

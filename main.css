@@ -232,8 +232,6 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	
-	
 
 	/* height: 1000px; */
 
@@ -249,7 +247,6 @@ body {
 	z-index: 1;
 }
 
-
 .img {
 	position: absolute;
 	top: 0;
@@ -258,7 +255,7 @@ body {
 	height: 100%;
 	opacity: 0;
 	object-fit: cover;
-	object-position: center;
+	object-position: center; 
 	transition: opacity 3s ease, transform 3s ease;
 	z-index: 1;
 }
@@ -354,7 +351,7 @@ body {
 	text-shadow: 0 0 1px #bdb1b1, 0 0 1px #8c8181, 0 0 15px #ada0a0c1;
 	transform: scale(1.08);
 }
-.p-header{
+.p-header {
 	position: absolute;
 	top: 920px;
 	left: 21%;
@@ -1162,7 +1159,6 @@ body {
 	padding: 20px;
 	color: white;
 	z-index: 100;
-
 }
 .label select {
 	padding: 20px;
@@ -1608,7 +1604,7 @@ input {
 	border-top: 1px solid #191919;
 	text-align: center;
 }
-p{
+p {
 	margin: 10px;
 }
 @media (max-width: 428px) {
@@ -1763,9 +1759,9 @@ p{
 		display: flex;
 		flex-direction: column;
 	}
-	.h1Main{
+	.h1Main {
 		font-size: 30px;
-		
+
 		padding: 10px;
 		margin: 20px;
 		margin-top: 150px;
@@ -1773,9 +1769,8 @@ p{
 	.navUl {
 		padding: 0;
 		margin-top: 50px;
-		
 	}
-	.p-header{
+	.p-header {
 		left: 10%;
 		top: 890px;
 		width: 80%;
