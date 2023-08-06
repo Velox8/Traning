@@ -1604,9 +1604,12 @@ input {
 	z-index: -1;
 }
 .footer {
-	padding: 3em 1em;
+	padding: 2em 1em;
 	border-top: 1px solid #191919;
 	text-align: center;
+}
+p{
+	margin: 10px;
 }
 @media (max-width: 428px) {
 	.containerHeader {
