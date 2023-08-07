@@ -1625,8 +1625,8 @@ p {
 		transform: translate(-50%);
 	}
 	.cardBmi {
-		height: 500px;
-		min-height: 600px;
+		height: 650px;
+		min-height: 650px;
 		min-width: 80%;
 		width: 80%;
 	}
