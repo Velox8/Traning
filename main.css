@@ -1784,14 +1784,13 @@ p {
 	.count00 {
 		font-size: 23px;
 	}
-
 	.sectionBmi {
 		display: flex;
 		justify-content: center;
 		background-image: none;
 		background-color: rgba(0, 0, 0, 0.898);
 	}
-
+	
 	.progress-bar-box {
 		display: flex;
 		flex-direction: column;
@@ -1814,7 +1813,7 @@ p {
 		position: absolute;
 		top: -60px;
 	}
-
+	
 	.progress-bar-container {
 		min-width: 230px;
 	}
@@ -1832,7 +1831,7 @@ p {
 		background-position: left -260px top;
 
 		/* background-image: none;
-				background-color: #050505db; */
+		background-color: #050505db; */
 	}
 	.container {
 		/* background-position: -390px center;
@@ -1954,6 +1953,7 @@ p {
 	.loader {
 		font-size: 36px;
 	}
+
 	.nav__item {
 		margin-left: 80px;
 		font-size: 26px;
