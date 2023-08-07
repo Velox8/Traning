@@ -316,6 +316,8 @@ body {
 	/* transform: scale(1.05); */
 }
 
+
+
 .navUl {
 	margin-top: 60px;
 	margin-left: 80px;
@@ -324,6 +326,7 @@ body {
 	font-size: 18px;
 	list-style: none;
 	z-index: 12;
+
 }
 
 .navLi {
@@ -333,6 +336,7 @@ body {
 }
 
 .aNav {
+	
 	color: #efe6e6e2;
 	text-decoration: none;
 	padding: 20px;
@@ -2076,6 +2080,95 @@ p {
 	.title {
 		text-align: center;
 	}
+	/* traning  */
+	.traning {
+	
+	  height: 2300px;
+	
+	}
+	
+	.traning-container {
+	
+	  flex-direction: column;
+	  justify-content: center;
+
+	 
+	  margin-top: -200px;
+	
+	}
+	
+	.traning-box {
+	
+	  width: 90%;
+	  padding: 20px;
+	  margin: 15px;
+	
+	 
+	}
+	
+	.traning-wrapper {
+		position: relative;
+		height: 800px;
+		width: 450px;
+	
+	}
+	
+	.traning-img {
+	 
+	  object-fit: cover;
+	  object-position: center;
+	  transition: transform 0.6s;
+
+	  
+	}
+	
+	
+	
+	
+	.traning-p {
+		
+		font-size: 30px;
+		color: #fff;
+	}
+	  
+	  .traning-p-hover {
+		top: 600px;
+	
+	
+	  }
+	
+	
+	
+	
+	.traning-h3 {
+	
+	  top: 500px;
+	  font-size: 30px;
+
+
+	}
+	
+	.traning-shadow-img {
+	
+	  z-index: 0;
+	}
+	
+	
+	.traning-a {
+	  font-size: 1px;
+	}
+	
+	.overlay {
+		font-size: 3px;
+	}
+	
+	.traning-h3-traning{
+		padding: 150px;
+		font-size: 50px; 
+
+	
+	}
+	
 	.progress-bar-box {
 		display: flex;
 		flex-direction: column;
@@ -2110,7 +2203,7 @@ p {
 		transform: translate(-50%);
 	}
 	.cardBmi {
-		height: 480px;
+		height: 690px;
 		width: 60%;
 	}
 	.cardTextBmi {
@@ -2210,6 +2303,12 @@ p {
 	}
 }
 @media (max-width: 992px) {
+	.navUl {
+		text-align: center;
+		
+		margin: 0;
+	
+	}
 	.clear,
 	.clear2,
 	.send,
