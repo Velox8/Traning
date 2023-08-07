@@ -42,22 +42,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	const traningImgElements = document.querySelectorAll('.traning-shadow-img');
 
 
-// const traning = document.querySelector('.traning')
-// 	const brightShadow = () => {
-// 		const windowPosition = window.innerHeight;
-// 		const blogHeaderImgTop = traning.getBoundingClientRect().top + 800;
+const traning = document.querySelector('.traning')
+	const brightShadow = () => {
+		const windowPosition = window.innerHeight;
+		const blogHeaderImgTop = traning.getBoundingClientRect().top + 100;
 	  
-// 		const shadowRatio = (windowPosition - blogHeaderImgTop) / windowPosition;
-// 		const brightStart = 0.46; // Początkowa wartość rozjaśnienia
-// 		const brightEnd = 0.2 // Końcowa wartość rozjaśnienia
+		const shadowRatio = (windowPosition - blogHeaderImgTop) / windowPosition;
+		const brightStart = 0.1; // Początkowa wartość rozjaśnienia
+		const brightEnd = 0.8 // Końcowa wartość rozjaśnienia
 	  
-// 		// Obliczamy aktualną wartość rozjaśnienia na podstawie shadowRatio
-// 		const currentBright = brightStart + shadowRatio * (brightEnd - brightStart);
+		// Obliczamy aktualną wartość rozjaśnienia na podstawie shadowRatio
+		const currentBright = brightStart + shadowRatio * (brightEnd - brightStart);
 		
-// 		// Ustawiamy odpowiednią wartość opacity na podstawie obliczonej wartości rozjaśnienia
-// 		traning.style.backgroundColor = `rgba(0,0,0,${currentBright})`;
-// 	  }
-// 	window.addEventListener('scroll', brightShadow)
+		// Ustawiamy odpowiednią wartość opacity na podstawie obliczonej wartości rozjaśnienia
+		traning.style.backgroundColor = `rgba(0,0,0,${currentBright})`;
+	  }
+	window.addEventListener('scroll', brightShadow)
 	
 	const addTraningP = (event) => {
 		const parentBox = event.currentTarget.closest('.traning-box');
