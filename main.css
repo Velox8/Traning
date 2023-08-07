@@ -320,9 +320,9 @@ body {
 	margin-top: 60px;
 	margin-left: 80px;
 	padding: 20px;
-
 	color: white;
 	font-size: 18px;
+	list-style: none;
 	z-index: 12;
 }
 
@@ -343,7 +343,7 @@ body {
 	color: rgb(255, 255, 255);
 	text-shadow: 0 0 5px #fff;
 	/* text-shadow: 5 2 1px #f7eded, 5 2 1px #fffefe, 5 2 3px #ada0a0c1; */
-	transform: scale(1.08);
+	transform: scale(1.02);
 }
 
 .hover {

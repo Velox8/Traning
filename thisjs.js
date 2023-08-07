@@ -1424,17 +1424,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		element.addEventListener('touchend', handleTapHover);
 	});
 
-	const links = document.querySelectorAll('.aNav');
+	// const links = document.querySelectorAll('.aNav');
 
-	links.forEach((link) => {
-		link.addEventListener('mouseover', () => {
-			link.parentNode.classList.add('hover');
-		});
+	// links.forEach((link) => {
+	// 	link.addEventListener('mouseover', () => {
+	// 		link.parentNode.classList.add('hover');
+	// 	});
 
-		link.addEventListener('mouseout', () => {
-			link.parentNode.classList.remove('hover');
-		});
-	});
+	// 	link.addEventListener('mouseout', () => {
+	// 		link.parentNode.classList.remove('hover');
+	// 	});
+	// });
 
 	// console.log(countHeight)
 	// const hew = (event) => {
