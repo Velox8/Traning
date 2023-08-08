@@ -319,7 +319,7 @@ body {
 
 
 .navUl {
-	margin-top: 30px;
+	margin-top: 150px;
 	margin-left: 30px;
 	padding: 20px;
 	color: white;
@@ -330,7 +330,7 @@ body {
 }
 
 .navLi {
-	padding: 20px;
+	padding: 6px;
 	font-size: 15px;
 	transition: color 0.3s;
 }
