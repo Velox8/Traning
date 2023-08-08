@@ -208,7 +208,7 @@ body {
 	position: relative;
 
 	width: 100%;
-	display: flex;
+	display: none;
 	justify-content: center;
 
 	padding: 6px;
@@ -218,8 +218,10 @@ body {
 	z-index: 12;
 }
 .h1Main {
+	text-align: center;
 	padding: 39px;
 	margin: 35px;
+	margin-top: 210px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 50px;
@@ -282,7 +284,7 @@ body {
 	transform: scale(1.2);
 }
 .title {
-	display: flex;
+	display: none;
 	text-align: center;
 
 	text-decoration: none;
@@ -319,8 +321,11 @@ body {
 
 
 .navUl {
-	margin-top: 150px;
-	margin-left: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 10px;
+	margin-left: 0px;
 	padding: 20px;
 	color: white;
 	font-size: 26px;
@@ -369,9 +374,11 @@ body {
 /* traning */
 .traning {
 	display: flex;flex-direction: column;
-  height: 830px;
+  height: 690px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0);
+  
+  background-color: #fbf5f5;;
+  /* background-color: rgba(255, 255, 255, 0); */
 }
 
 .traning-container {
@@ -481,6 +488,96 @@ text-align: center;
 color: white;
 
 z-index: 100 ;}
+
+
+
+/* about-us  */
+
+
+
+
+
+
+
+.about-us {
+	position: relative;
+	background: none;
+	height: 100%;
+	width: 100%;
+	color: rgba(2, 13, 16, 0.937254902);
+	overflow: hidden;
+	background-color: #fbf5f5;
+  }
+  .about-us .img-container {
+	width: 100%;
+	height: 100%;
+	background-color: #fbf5f5;
+  }
+  .about-us .img-container .about-us-img {
+	position: absolute;
+	top: 30%;
+	left: 26%;
+	width: 50%;
+	height: 50%;
+	z-index: 0;
+	transition: transform 0s;
+	border-radius: 0%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center bottom;
+	   object-position: center bottom;
+	   
+  }
+  .about-us .shadow-img-about-us {
+	position: absolute;
+	top: 30%;
+	left: 26%;
+	width: 50%;
+	height: 50%;
+	border-radius: 0%;
+	background-color: rgba(0, 0, 0, 0.6); /* Ustaw odpowiedni kolor i przezroczystość */
+	z-index: 1;
+	transition: transform 0s;
+  }
+  .about-us .about-us-container {
+	display: flex;
+	flex-direction: column;
+	z-index: 20;
+  }
+  .about-us .about-us-container .about-us-p1 {
+	text-align: left;
+	flex-wrap: wrap;
+	margin-left: 50px;
+	padding: 90px;
+	font-size: 2.3rem;
+	line-height: 1.5;
+	width: 80%;
+	color: #fbf5f5;
+	z-index: 20;
+  }
+  .about-us .about-us-container .about-us-box {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 100px;
+	z-index: 20;
+  }
+  .about-us .about-us-container .about-us-box .about-us-p2 {
+	padding: 30px;
+	width: 39%;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	color: #fbf5f5;
+	z-index: 20;
+  }
+  .about-us .about-us-container .about-us-box .about-us-p3 {
+	margin-top: 290px;
+	padding: 30px;
+	width: 60%;
+	font-size: 2.3rem;
+	line-height: 1.5;
+	color: #fbf5f5;
+	z-index: 20;
+  }
 /* bmi */
 
 .sectionBmi {
