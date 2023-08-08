@@ -323,7 +323,7 @@ body {
 	margin-left: 30px;
 	padding: 20px;
 	color: white;
-	font-size: 21px;
+	font-size: 26px;
 	list-style: none;
 	z-index: 12;
 
@@ -331,7 +331,7 @@ body {
 
 .navLi {
 	padding: 20px;
-	font-size: 12px;
+	font-size: 15px;
 	transition: color 0.3s;
 }
 
