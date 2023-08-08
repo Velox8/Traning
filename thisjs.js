@@ -71,19 +71,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.addEventListener('scroll', scaleOn)
 	const traning = document.querySelector('.traning')
+	const shadowAboutUs = document.querySelector('.shadow-img-about-us')
 	const brightShadow = () => {
 		const windowPosition = window.innerHeight;
 		const blogHeaderImgTop = traning.getBoundingClientRect().top + 100;
-	  
+		const shadowAboutUsTop = shadowAboutUs.getBoundingClientRect().top + 600
 		const shadowRatio = (windowPosition - blogHeaderImgTop) / windowPosition;
 		const brightStart = 0.1; // Początkowa wartość rozjaśnienia
 		const brightEnd = 0.8 // Końcowa wartość rozjaśnienia
 	  
 		// Obliczamy aktualną wartość rozjaśnienia na podstawie shadowRatio
 		const currentBright = brightStart + shadowRatio * (brightEnd - brightStart);
-		
+		const shadowRatioAboutUs = (windowPosition - shadowAboutUsTop) / windowPosition
+
+		const shadowAboutUsCurrentBright = brightStart + shadowRatioAboutUs *(brightEnd - brightStart)
 		// Ustawiamy odpowiednią wartość opacity na podstawie obliczonej wartości rozjaśnienia
 		traning.style.backgroundColor = `rgba(0,0,0,${currentBright})`;
+		shadowAboutUs.style.backgroundColor = `rgba(0,0,0,${shadowAboutUsCurrentBright})`;
 	  }
 	window.addEventListener('scroll', brightShadow)
 	
