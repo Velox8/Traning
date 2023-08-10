@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		const shadowAboutUsCurrentBright = brightStart2 + shadowRatioAboutUs *(brightEnd2 - brightStart2)
 		// Ustawiamy odpowiednią wartość opacity na podstawie obliczonej wartości rozjaśnienia
-		traning.style.backgroundColor = `rgba(0,0,0,${currentBright})`;
+		// traning.style.backgroundColor = `rgba(0,0,0,${currentBright})`;
 		shadowAboutUs.style.backgroundColor = `rgba(0,0,0,${shadowAboutUsCurrentBright})`;
 	  }
 	window.addEventListener('scroll', brightShadow)

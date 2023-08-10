@@ -91,7 +91,7 @@ body {
 
 .burger-btn {
 	position: fixed;
-	top: 82px;
+	top: 29px;
 	right: 20px;
 	padding: 0.8em;
 	background: none;
@@ -374,7 +374,7 @@ body {
 /* traning */
 .traning {
 	display: flex;flex-direction: column;
-  height: 690px;
+  height: 530px;
   width: 100%;
   
   background-color: #fbf5f5;;
@@ -2171,10 +2171,15 @@ p {
 }
 
 @media (max-width: 810px) {
+		.containerHeader {
+			height: 800px;
+		}
 	.loader {
 		font-size: 36px;
 	}
-
+.p-header {
+	top: 390px;
+}
 	.nav__item {
 		margin-left: 80px;
 		font-size: 26px;
@@ -2271,7 +2276,32 @@ p {
 
 	
 	}
+ /* about us 	 */
+ .about-us .about-us-container .about-us-p1 {
+	text-align: center;
+
+	/* margin-left: 50px; */
+	margin: 0px;
+	padding: 90px;
+	font-size: 1rem;
+	line-height: 1.5;
+	width: 100%;
+	color: #fbf5f5;
+	z-index: 20;
+  }
+ .about-us .about-us-container .about-us-box .about-us-p3 {
+
+	text-align: center;	
 	
+	padding: 90px;
+	margin: 0;
+
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #fbf5f5;
+	z-index: 20;
+  }
 	.progress-bar-box {
 		display: flex;
 		flex-direction: column;
