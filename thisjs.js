@@ -37,9 +37,30 @@ document.addEventListener('DOMContentLoaded', function () {
 	// liczenie
 	const imgs = document.querySelectorAll('.img');
 	const pHeader = document.querySelector('.p-header');
-
+	
+	
+	const pHeader2 = document.querySelector('.p-header2');
 	const traningImgElements = document.querySelectorAll('.traning-shadow-img');
-
+	const body = document.querySelector('.offers-container');
+	const cards = document.querySelectorAll('.card-offers');
+	
+	function showCard() {
+		cards.forEach((card) => {
+			card.classList.remove('active');
+			this.classList.add('active');
+		});
+		handleBgColor(this);
+	}
+	const handleBgColor = (card) => {
+		const season = card.getAttribute('data-season');
+		body.setAttribute('data-bg', season);
+	};
+	
+	cards.forEach((card) => card.addEventListener('click', showCard));
+	
+	
+	
+	
 
 
 	
@@ -137,15 +158,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	};
 	window.addEventListener('scroll', scaleImagesOnScroll1);
-
 	let indexx = 1;
 	let timeoutt;
+	// Zmień swoją sylwetkę! Mogę Cię przeprowadzić przez cały proces od ułożenia planu
+	// treningowego, wspólny trening przez dietę do wspaniałych efektów. Wszystko zależy od Twojej
+	// determinacji!
 
-	let inputValue =
-		' Zmień swoją sylwetkę! Mogę Cię przeprowadzić przez cały proces od ułożenia planu treningowego przez dietę do wspaniałych efektów. Wszystko zależy od Twojej determinacji. Mogę Ci pomóc niezależnie od Twojego stażu treningowego. ';
-	const textAnimation = () => {
+
+	let inputValue = 
+		` Cześć! jestem Maksymilian. Znajomi mówią do mnie Maksiu. Sport towarzyszy mi przez całe życie. Trening na siłowni jest moją ogromną pasją. Przygodę zaczynałem marnując wiele czasu na nieskuteczne metody
+		i drogie suplementy. Mijały miesiące, a ja bładziłem nie robiąc wiekszych postępów. Zacząłem sam zdobywać wiedzę i się rozwijać. Zajeło mi to kilka lat. Teraz chcialbym Ci, pomóc, żebyś Ty zaoszczędził swój czas i pieniądze, skupił się na rzeczach, które na prawdę działają. Pomogłem już wielu osobom zmienić sylwetkę,a przede wszystkim nabrać wiele zdrowych nawyków i umiejętności kontroli swojej wagi i kompozycji ciała. `
+	if(pHeader){
+		const textAnimation = () => {
 		let speed = 50;
 		pHeader.innerHTML = inputValue.slice(0, indexx);
+	
 		indexx++;
 		if (indexx > inputValue.length) {
 			indexx = 0;
@@ -157,8 +184,31 @@ document.addEventListener('DOMContentLoaded', function () {
 			clearTimeout(timeoutt);
 			timeoutt = setTimeout(textAnimation, speed);
 		}
-	};
+	}
 	setTimeout(textAnimation, 3500);
+};
+	// let indexxx = 1;
+	// let timeouttt;
+	let inputValue2 = 
+		` Jak wygląda współpraca???    To zależy czego oczekujesz. Na początku przeprowadzimy rozmowę na temat Twojego celu i doświadczenia, które już posiadasz. Następnie pokażę Ci jak wykonywać wszystkie ćwiczenia, które dopasujemy do Twoich preferencji i czasu. Wytłumacze Ci niezbędne aspekty kształtowania sylwetki i podejścia do diety i od czego zależy Twój postęp. Dopasujemy plan żywieniowy pod Twoje preferencje. Jeśli jesteś zainteresowany/a zobacz ofertę i skontaktuj się ze mną. `
+	
+		const textAnimation2 = () => {
+		let speed = 50;
+	
+		pHeader2.innerHTML = inputValue2.slice(0,indexx)
+		indexx++;
+		if (indexx > inputValue2.length) {
+			indexx = 0;
+			clearTimeout(timeoutt);
+			setTimeout(() => {
+				timeout = setTimeout(textAnimation2, speed);
+			}, 8000);
+		} else {
+			clearTimeout(timeoutt);
+			timeoutt = setTimeout(textAnimation2, speed);
+		}
+	};
+	setTimeout(textAnimation2, 3500);
 	// const btn = document.querySelector('.btn');
 	let textCard = 1;
 
