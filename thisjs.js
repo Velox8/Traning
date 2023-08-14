@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		i drogie suplementy. Mijały miesiące, a ja bładziłem nie robiąc wiekszych postępów. Zacząłem sam zdobywać wiedzę i się rozwijać. Zajeło mi to kilka lat. Teraz chcialbym Ci, pomóc, żebyś Ty zaoszczędził swój czas i pieniądze, skupił się na rzeczach, które na prawdę działają. Pomogłem już wielu osobom zmienić sylwetkę,a przede wszystkim nabrać wiele zdrowych nawyków i umiejętności kontroli swojej wagi i kompozycji ciała. `
 	if(pHeader){
 		const textAnimation = () => {
-		let speed = 50;
+		let speed = 30;
 		pHeader.innerHTML = inputValue.slice(0, indexx);
 	
 		indexx++;
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		` Jak wygląda współpraca???    To zależy czego oczekujesz. Na początku przeprowadzimy rozmowę na temat Twojego celu i doświadczenia, które już posiadasz. Następnie pokażę Ci jak wykonywać wszystkie ćwiczenia, które dopasujemy do Twoich preferencji i czasu. Wytłumacze Ci niezbędne aspekty kształtowania sylwetki i podejścia do diety i od czego zależy Twój postęp. Dopasujemy plan żywieniowy pod Twoje preferencje. Jeśli jesteś zainteresowany/a zobacz ofertę i skontaktuj się ze mną. `
 	
 		const textAnimation2 = () => {
-		let speed = 50;
+		let speed = 30;
 	
 		pHeader2.innerHTML = inputValue2.slice(0,indexx)
 		indexx++;
