@@ -39,15 +39,25 @@ document.addEventListener('DOMContentLoaded', function () {
 	const pHeader = document.querySelector('.p-header');
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	const pHeader2 = document.querySelector('.p-header2');
+	const pHeader3 = document.querySelector('.p-header3');
 	const traningImgElements = document.querySelectorAll('.traning-shadow-img');
 	const body = document.querySelector('.offers-container');
 	const cards = document.querySelectorAll('.card-offers');
 	
+	
 	function showCard() {
 		cards.forEach((card) => {
-			card.classList.remove('active');
-			this.classList.add('active');
+			card.classList.remove('activeT');
+			this.classList.add('activeT');
 		});
 		handleBgColor(this);
 	}
@@ -112,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		// traning.style.backgroundColor = `rgba(0,0,0,${currentBright})`;
 		shadowAboutUs.style.backgroundColor = `rgba(0,0,0,${shadowAboutUsCurrentBright})`;
 	  }
-	window.addEventListener('scroll', brightShadow)
+	  if(traning && shadowAboutUs){
+	window.addEventListener('scroll', brightShadow)}
 	
 	const addTraningP = (event) => {
 		const parentBox = event.currentTarget.closest('.traning-box');
@@ -158,17 +169,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	};
 	window.addEventListener('scroll', scaleImagesOnScroll1);
-	let indexx = 1;
-	let timeoutt;
 	// Zmień swoją sylwetkę! Mogę Cię przeprowadzić przez cały proces od ułożenia planu
 	// treningowego, wspólny trening przez dietę do wspaniałych efektów. Wszystko zależy od Twojej
 	// determinacji!
 
-
-	let inputValue = 
+	
+	
+	if(pHeader) {
+		let indexx = 1;
+		let timeoutt;
+		let inputValue = 
 		` Cześć! jestem Maksymilian. Znajomi mówią do mnie Maksiu. Sport towarzyszy mi przez całe życie. Trening na siłowni jest moją ogromną pasją. Przygodę zaczynałem marnując wiele czasu na nieskuteczne metody
 		i drogie suplementy. Mijały miesiące, a ja bładziłem nie robiąc wiekszych postępów. Zacząłem sam zdobywać wiedzę i się rozwijać. Zajeło mi to kilka lat. Teraz chcialbym Ci, pomóc, żebyś Ty zaoszczędził swój czas i pieniądze, skupił się na rzeczach, które na prawdę działają. Pomogłem już wielu osobom zmienić sylwetkę,a przede wszystkim nabrać wiele zdrowych nawyków i umiejętności kontroli swojej wagi i kompozycji ciała. `
-	if(pHeader){
+	
 		const textAnimation = () => {
 		let speed = 30;
 		pHeader.innerHTML = inputValue.slice(0, indexx);
@@ -185,15 +198,19 @@ document.addEventListener('DOMContentLoaded', function () {
 			timeoutt = setTimeout(textAnimation, speed);
 		}
 	}
-	setTimeout(textAnimation, 3500);
-};
+	setTimeout(textAnimation, 3500); }
 	// let indexxx = 1;
 	// let timeouttt;
-	let inputValue2 = 
-		` Jak wygląda współpraca???    To zależy czego oczekujesz. Na początku przeprowadzimy rozmowę na temat Twojego celu i doświadczenia, które już posiadasz. Następnie pokażę Ci jak wykonywać wszystkie ćwiczenia, które dopasujemy do Twoich preferencji i czasu. Wytłumacze Ci niezbędne aspekty kształtowania sylwetki i podejścia do diety i od czego zależy Twój postęp. Dopasujemy plan żywieniowy pod Twoje preferencje. Jeśli jesteś zainteresowany/a zobacz ofertę i skontaktuj się ze mną. `
 	
+	
+		if(pHeader2){
+			let indexx = 1;
+	let timeoutt;
 		const textAnimation2 = () => {
-		let speed = 30;
+			let inputValue2 = 
+				` Jak wygląda współpraca???    To zależy czego oczekujesz. Na początku przeprowadzimy rozmowę na temat Twojego celu i doświadczenia, które już posiadasz. Następnie pokażę Ci jak wykonywać wszystkie ćwiczenia, które dopasujemy do Twoich preferencji i czasu. Wytłumacze Ci niezbędne aspekty kształtowania sylwetki i podejścia do diety i od czego zależy Twój postęp. Dopasujemy plan żywieniowy pod Twoje preferencje. Jeśli jesteś zainteresowany/a zobacz ofertę i skontaktuj się ze mną. `
+				
+			let speed = 30;
 	
 		pHeader2.innerHTML = inputValue2.slice(0,indexx)
 		indexx++;
@@ -208,7 +225,32 @@ document.addEventListener('DOMContentLoaded', function () {
 			timeoutt = setTimeout(textAnimation2, speed);
 		}
 	};
-	setTimeout(textAnimation2, 3500);
+	
+setTimeout(textAnimation2, 3500);}
+
+
+if(pHeader3){
+
+		let inputValue3 = 
+			` Zapoznaj się z artykułami, które pomogą Ci ugruntować wiedzę i przyczynią się do większej świadomości w procesie kształtowania sylwetki. `
+		const textAnimation3 = () => {
+		let speed = 30;
+	
+		pHeader3.innerHTML = inputValue3.slice(0,indexx)
+		indexx++;
+		if (indexx > inputValue3.length) {
+			indexx = 0;
+			clearTimeout(timeoutt);
+			setTimeout(() => {
+				timeout = setTimeout(textAnimation3, speed);
+			}, 8000);
+		} else {
+			clearTimeout(timeoutt);
+			timeoutt = setTimeout(textAnimation3, speed);
+		}
+	};
+{	
+setTimeout(textAnimation3, 3500);}}
 	// const btn = document.querySelector('.btn');
 	let textCard = 1;
 
@@ -344,8 +386,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			resultE.classList.remove('e');
 		}
 	};
+	if(faPersonDress && faPerson){
 	faPersonDress.addEventListener('click', textPsexW);
-	faPerson.addEventListener('click', textPsexM);
+	faPerson.addEventListener('click', textPsexM);}
 
 	const countBMRM = () => {
 		if (
@@ -1330,9 +1373,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		} else {
 			resultC.textContent = 'Potrzebujesz ' + roundedResult + ' Kcal';
 		}
-	};
+	}; if(resultB && resultb1){
 	resultB.addEventListener('click', printCountBMRM);
-	resultb1.addEventListener('click', printCountBMRW);
+	resultb1.addEventListener('click', printCountBMRW);}
 
 	// Dla kobiet:
 
@@ -1412,11 +1455,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	let progressBarLabel = document.querySelector('.progress-bar-label');
 	let isMouseDown = false;
 
+	if(progressBarContainer) {
 	progressBarContainer.addEventListener('mousedown', function (event) {
 		isMouseDown = true;
 		updateProgressBar(event);
 		calculateBMI();
-	});
+	});}
 
 	document.addEventListener('mousemove', function (event) {
 		if (isMouseDown) {
@@ -1429,11 +1473,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		isMouseDown = false;
 	});
 
-	progressBarContainer.addEventListener('touchstart', function (event) {
+	if(progressBarContainer) {progressBarContainer.addEventListener('touchstart', function (event) {
 		isMouseDown = true;
 		updateProgressBar(event);
 		calculateBMI();
-	});
+	});}
 
 	document.addEventListener('touchmove', function (event) {
 		if (isMouseDown) {
@@ -1455,11 +1499,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	let progressBarLabel2 = document.querySelector('.progress-bar-label2');
 	let isMouseDown2 = false;
 
+
+	if(progressBarContainer2){
 	progressBarContainer2.addEventListener('mousedown', function (event) {
 		isMouseDown2 = true;
 		updateProgressBar2(event);
 		calculateBMI();
-	});
+	});}
 
 	document.addEventListener('mousemove', function (event) {
 		if (isMouseDown2) {
@@ -1472,11 +1518,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		isMouseDown2 = false;
 	});
 
-	progressBarContainer2.addEventListener('touchstart', function (event) {
+	if(progressBarContainer2) {progressBarContainer2.addEventListener('touchstart', function (event) {
 		isMouseDown2 = true;
 		updateProgressBar2(event);
 		calculateBMI();
-	});
+	});}
 
 	document.addEventListener('touchmove', function (event) {
 		if (isMouseDown2) {
@@ -1572,14 +1618,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	//         return false
 	// }
-
+if(btn && btnclear && btnclear2 && btnsend2 && faPerson) {
 	btn.addEventListener('click', printW);
 	btnclear.addEventListener('click', clear);
 	btnsend2.addEventListener('click', printMaxrep);
 	btnclear2.addEventListener('click', clear2);
 	faPerson.addEventListener('click', activeMen);
-
-	faPersonDress.addEventListener('click', activeWoman);
+}
 
 	// resultB.addEventListener('click', printCountBMRM);
 	// resultB.addEventListener('click', printCountBMRW);
