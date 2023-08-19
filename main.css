@@ -277,6 +277,9 @@ body {
 	opacity: 1;
 	z-index: 1;
 }
+.blogImg {
+	object-position: top;
+}
 .title1 {
 	display: flex;
 
@@ -679,6 +682,7 @@ body {
 }
 .article .article-container .article-box li {
 	margin: 30px;
+	text-decoration: none;
 }
 .article .article-container .article-box li::before {
 	content: counter(item) '.';
@@ -2693,20 +2697,20 @@ p {
 		font-size: 1rem;
 	}
 
-	.active {
+	.activeT {
 		flex-grow: 8;
 	}
-	.active .text-offers {
+	.activeT .text-offers {
 		animation: show-bg 1s 0.6s forwards;
 	}
-	.active .text-offers h2 {
+	.activeT .text-offers h2 {
 		display: none;
 	}
-	.active .text-offers p {
+	.activeT .text-offers p {
 		display: block;
 		animation: show-text 1s 0.2s forwards;
 	}
-	.card-offers.active:after {
+	.card-offers.activeT:after {
 		opacity: 0;
 	}
 
@@ -2947,6 +2951,82 @@ p {
 	}
 }
 @media (max-width: 992px) {
+	.containerHeaderBlog {
+		height: 500px;
+	}
+	.blog {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.blog-container {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+		z-index: 500;
+	}
+	
+	.blog-article {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		
+		height: 100%;
+		background-color: #fff;
+		z-index: 21;
+	}
+	.date {
+		align-self: center;
+		margin-top: 10px;
+	}
+	.blog-img {align-self: center;
+		width: 90%;
+		height: 390px;
+		margin: 5px;
+		object-fit: cover;
+	}
+	
+	.right {
+		display: flex;
+		flex-direction: column;
+		
+		width: 100%;
+		z-index: 21;
+	}
+	
+	.blog-h3 {align-self: center;
+	text-align: center;
+		margin: 10px;
+		font-size: 2.3rem;
+		font-weight: normal;
+		flex-wrap: wrap;
+	
+		white-space: wrap;
+	}
+	
+	.blog-a {
+	align-self: center;
+		margin: 10px;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	
+		color: #000;
+		transition: transform 0.5s;
+	}
+	.blog-a:hover {
+		transform: scale(0.9);
+	}
+	
+	.blog-line {
+		align-self: center;
+		background-color: rgba(0, 0, 0, 0.235);
+		width: 90%;
+		height: 2px;
+	}
+	
 	.navUl {
 		text-align: center;
 

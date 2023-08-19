@@ -1618,12 +1618,17 @@ setTimeout(textAnimation3, 3500);}}
 
 	//         return false
 	// }
-if(btn && btnclear && btnclear2 && btnsend2 && faPerson) {
+
+
+	if(btn && btnclear && btnclear2 && btnsend2 && faPerson) {
 	btn.addEventListener('click', printW);
 	btnclear.addEventListener('click', clear);
 	btnsend2.addEventListener('click', printMaxrep);
 	btnclear2.addEventListener('click', clear2);
 	faPerson.addEventListener('click', activeMen);
+	faPersonDress.addEventListener('click', activeWoman);
+
+
 }
 
 	// resultB.addEventListener('click', printCountBMRM);
