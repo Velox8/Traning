@@ -2951,32 +2951,34 @@ p {
 	}
 }
 @media (max-width: 992px) {
+	.containerHeader-article {
+		height: 350px;
+	}
 	.containerHeaderBlog {
 		height: 500px;
 	}
+	.h1MainBlog {
+		margin-top: 90px;
+	}
 	.blog {
-		display: flex;
-		justify-content: center;
+	
 		width: 100%;
 	}
 	.blog-container {
-		display: flex;
-		flex-direction: column;
-		background-color: #fff;
+	
+
 		width: 100%;
-		height: 100%;
+		
 		margin-top: 0px;
-		z-index: 500;
+	
 	}
 	
 	.blog-article {
-		position: relative;
-		display: flex;
+	
 		flex-direction: column;
 		
 		height: 100%;
-		background-color: #fff;
-		z-index: 21;
+
 	}
 	.date {
 		align-self: center;
@@ -2986,46 +2988,85 @@ p {
 		width: 90%;
 		height: 390px;
 		margin: 5px;
-		object-fit: cover;
+
 	}
 	
 	.right {
-		display: flex;
-		flex-direction: column;
+		
 		
 		width: 100%;
-		z-index: 21;
+
 	}
 	
 	.blog-h3 {align-self: center;
 	text-align: center;
 		margin: 10px;
 		font-size: 2.3rem;
-		font-weight: normal;
-		flex-wrap: wrap;
 	
-		white-space: wrap;
+	
+		
 	}
 	
 	.blog-a {
 	align-self: center;
 		margin: 10px;
 		font-size: 1.5rem;
-		text-transform: uppercase;
 	
-		color: #000;
-		transition: transform 0.5s;
+	
+	
 	}
-	.blog-a:hover {
-		transform: scale(0.9);
+
+	/* article  */
+
+
+
+
+	.article .article-container {
+		display: flex;
+		margin-top: 0px;
+		height: 100%;
+		width: 100%;
+		background-color: #fbf5f5;
+		z-index: 20;
+	}
+	.article .article-container .article-box {
+		
+	
+	
+		margin: 10px;
+		padding: 20px;
+	
+		/* Dodanie efektu animacji linii przy focusie */
+	}
+	.article .article-container .article-box h3 {
+		
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.article .article-contaziner .article-box p {
+
+		font-size: 1.2rem;
+	}
+	.article .article-container .article-box ol {
+		margin-left: 20px;
+	}
+
+
+	.article .article-container .article-box .article-h2 {
+		text-align: center;
+	align-self: center;
+	font-size: 1.5rem;
 	}
 	
-	.blog-line {
-		align-self: center;
-		background-color: rgba(0, 0, 0, 0.235);
-		width: 90%;
-		height: 2px;
+	.article .article-container .article-box .invest {
+
+		padding: 10px;
+
 	}
+
+	
+
 	
 	.navUl {
 		text-align: center;
