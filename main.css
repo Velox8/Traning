@@ -101,7 +101,7 @@ body {
 }
 .burger-btn:focus {
 	outline: none;
-	border: 1px solid  #d2c4c4;;
+	border: 1px solid #d2c4c4;
 	border-radius: 8px;
 }
 .burger-btn:hover .burger-btn__bars::after,
@@ -272,7 +272,9 @@ body {
 	transition: opacity 3s ease, transform 3s ease;
 	z-index: 1;
 }
-
+.img-small {
+	object-position: center top;
+}
 .img.active-img {
 	opacity: 1;
 	z-index: 1;
@@ -2961,65 +2963,48 @@ p {
 		margin-top: 90px;
 	}
 	.blog {
-	
 		width: 100%;
 	}
 	.blog-container {
-	
-
 		width: 100%;
-		
-		margin-top: 0px;
-	
-	}
-	
-	.blog-article {
-	
-		flex-direction: column;
-		
-		height: 100%;
 
+		margin-top: 0px;
+	}
+
+	.blog-article {
+		flex-direction: column;
+
+		height: 100%;
 	}
 	.date {
 		align-self: center;
 		margin-top: 10px;
 	}
-	.blog-img {align-self: center;
+	.blog-img {
+		align-self: center;
 		width: 90%;
 		height: 390px;
 		margin: 5px;
-
 	}
-	
+
 	.right {
-		
-		
 		width: 100%;
-
 	}
-	
-	.blog-h3 {align-self: center;
-	text-align: center;
+
+	.blog-h3 {
+		align-self: center;
+		text-align: center;
 		margin: 10px;
 		font-size: 2.3rem;
-	
-	
-		
 	}
-	
+
 	.blog-a {
-	align-self: center;
+		align-self: center;
 		margin: 10px;
 		font-size: 1.5rem;
-	
-	
-	
 	}
 
 	/* article  */
-
-
-
 
 	.article .article-container {
 		display: flex;
@@ -3030,44 +3015,33 @@ p {
 		z-index: 20;
 	}
 	.article .article-container .article-box {
-		
-	
-	
 		margin: 10px;
 		padding: 20px;
-	
+
 		/* Dodanie efektu animacji linii przy focusie */
 	}
 	.article .article-container .article-box h3 {
-		
 		font-size: 1.2rem;
 		margin-bottom: 10px;
 		text-align: center;
 	}
 	.article .article-contaziner .article-box p {
-
 		font-size: 1.2rem;
 	}
 	.article .article-container .article-box ol {
 		margin-left: 20px;
 	}
 
-
 	.article .article-container .article-box .article-h2 {
 		text-align: center;
-	align-self: center;
-	font-size: 1.5rem;
+		align-self: center;
+		font-size: 1.5rem;
 	}
-	
+
 	.article .article-container .article-box .invest {
-
 		padding: 10px;
-
 	}
 
-	
-
-	
 	.navUl {
 		text-align: center;
 
