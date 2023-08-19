@@ -206,8 +206,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		if(pHeader2){
 			let indexx = 1;
 	let timeoutt;
-		const textAnimation2 = () => {
-			let inputValue2 = 
+	const textAnimation2 = () => {
+		let inputValue2 = 
 				` Jak wygląda współpraca???    To zależy czego oczekujesz. Na początku przeprowadzimy rozmowę na temat Twojego celu i doświadczenia, które już posiadasz. Następnie pokażę Ci jak wykonywać wszystkie ćwiczenia, które dopasujemy do Twoich preferencji i czasu. Wytłumacze Ci niezbędne aspekty kształtowania sylwetki i podejścia do diety i od czego zależy Twój postęp. Dopasujemy plan żywieniowy pod Twoje preferencje. Jeśli jesteś zainteresowany/a zobacz ofertę i skontaktuj się ze mną. `
 				
 			let speed = 30;
@@ -226,10 +226,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	};
 	
-setTimeout(textAnimation2, 3500);}
-
-
+	setTimeout(textAnimation2, 3500);}
+	
+	
 if(pHeader3){
+	let indexx = 1;
+let timeoutt;
 
 		let inputValue3 = 
 			` Zapoznaj się z artykułami, które pomogą Ci ugruntować wiedzę i przyczynią się do większej świadomości w procesie kształtowania sylwetki. `
