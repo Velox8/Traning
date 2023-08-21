@@ -784,10 +784,9 @@ body {
 	z-index: 0;
 }
 .traning-img-2 {
-	object-position:  -420px center;
+	object-position: -420px center;
 }
 .traning-img-3 {
-	
 	filter: grayscale(20%);
 }
 
@@ -2173,7 +2172,6 @@ input {
 	font-size: 36px;
 }
 .social-media a {
-	
 	padding: 20px;
 	color: white;
 	transition: color 0.5s;
@@ -2778,9 +2776,7 @@ p {
 		transition: transform 0.6s;
 	}
 	.traning-img-2 {
-		
 		object-position: -200px center;
-		
 	}
 
 	.traning-p {
@@ -3269,6 +3265,11 @@ p {
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%);
+	}
+	.footer {
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
 	}
 }
 @media (max-width: 1268px) {
