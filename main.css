@@ -783,6 +783,9 @@ body {
 	transition: transform 0.6s;
 	z-index: 0;
 }
+.traning-img-2 {
+	object-position:  -420px center;
+}
 
 .traning-p {
 	position: absolute;
