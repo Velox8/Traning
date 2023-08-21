@@ -2161,11 +2161,11 @@ input {
 }
 .mText p,
 .eText p {
-	padding: 5px;
+	padding: 0px;
 }
 .mText h3,
 .eText h3 {
-	padding: 5px;
+	padding: 10px;
 }
 
 .social-media {
@@ -2173,6 +2173,7 @@ input {
 	font-size: 36px;
 }
 .social-media a {
+	
 	padding: 20px;
 	color: white;
 	transition: color 0.5s;
@@ -2180,7 +2181,9 @@ input {
 .social-media a:hover {
 	color: rgb(43, 149, 215);
 }
-
+.fab {
+	margin-top: 20px;
+}
 .shadowmedia {
 	position: absolute;
 	top: 0;
@@ -2190,7 +2193,11 @@ input {
 	z-index: -1;
 }
 .footer {
-	padding: 2em 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 50px;
+	/* padding: 1em 1em; */
 	border-top: 1px solid #191919;
 	text-align: center;
 }
