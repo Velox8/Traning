@@ -2562,6 +2562,12 @@ p {
 		top: 280px;
 		font-size: 1rem;
 	}
+	.p-header3 {
+
+		top: 290px;
+		font-size: 1rem;
+	
+	}
 	.nav__item {
 		margin-left: 80px;
 		font-size: 26px;
