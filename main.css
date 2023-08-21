@@ -786,6 +786,10 @@ body {
 .traning-img-2 {
 	object-position:  -420px center;
 }
+.traning-img-3 {
+	
+	filter: grayscale(20%);
+}
 
 .traning-p {
 	position: absolute;
@@ -2752,7 +2756,7 @@ p {
 		height: 500px;
 		width: 90%;
 		padding: 20px;
-		margin: 15px;
+		margin: 5%;
 	}
 
 	.traning-wrapper {
@@ -2765,6 +2769,11 @@ p {
 		object-fit: cover;
 		object-position: center;
 		transition: transform 0.6s;
+	}
+	.traning-img-2 {
+		
+		object-position: -200px center;
+		
 	}
 
 	.traning-p {
