@@ -695,6 +695,7 @@ body {
 	top: 0;
 }
 .article .article-container .article-box .article-h2 {
+	text-align: center;
 	align-self: center;
 	margin-top: 60px;
 	padding: 10px;
