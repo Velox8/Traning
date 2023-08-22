@@ -618,6 +618,10 @@ body {
 	margin: 15px;
 	object-fit: cover;
 }
+.blog-img-2 {
+
+	object-position: center -50px;
+}
 
 .right {
 	display: flex;
