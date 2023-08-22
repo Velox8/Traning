@@ -52,7 +52,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	const traningImgElements = document.querySelectorAll('.traning-shadow-img');
 	const body = document.querySelector('.offers-container');
 	const cards = document.querySelectorAll('.card-offers');
-	
+	const parallaxImages = document.querySelector('.traning-img2');
+
+const movePictureUp = () => {
+  const scrollValue = window.scrollY;
+  
+    const scrollSpeed = 0.03; // Dostosuj prędkość przesuwania zdjęć
+    const imgTop = parallaxImages.getBoundingClientRect().top;
+    const offset = (scrollValue - imgTop) * scrollSpeed;
+    parallaxImages.style.top = -offset + 'px';
+  
+};
+
+window.addEventListener('scroll', movePictureUp);
 	
 	function showCard() {
 		cards.forEach((card) => {
