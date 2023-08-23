@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (pHeader) {
 		let indexx = 1;
 		let timeoutt;
-		let inputValue = ` Cześć! jestem Maksymilian. Znajomi mówią do mnie Maksiu. Sport towarzyszy mi przez całe życie. Trening na siłowni jest moją ogromną pasją. Przygodę zaczynałem marnując wiele czasu na nieskuteczne metody
+		let inputValue = ` Cześć! Mam na imę Maksymilian. Sport towarzyszy mi przez całe życie. Trening na siłowni jest moją ogromną pasją. Przygodę zaczynałem marnując wiele czasu na nieskuteczne metody
 		i drogie suplementy. Mijały miesiące, a ja bładziłem nie robiąc wiekszych postępów. Zacząłem sam zdobywać wiedzę i się rozwijać. Zajeło mi to kilka lat. Teraz chcialbym Ci, pomóc, żebyś Ty zaoszczędził swój czas i pieniądze, skupił się na rzeczach, które na prawdę działają. Pomogłem już wielu osobom zmienić sylwetkę, a przede wszystkim nabrać wiele zdrowych nawyków i umiejętności kontroli swojej wagi i kompozycji ciała. `;
 
 		const textAnimation = () => {
