@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		parallaxImages.style.top = -offset + 'px';
 	};
 
-	window.addEventListener('scroll', movePictureUp);
+	if(parallaxImages) {window.addEventListener('scroll', movePictureUp);}
 
 	function showCard() {
 		cards.forEach((card) => {
