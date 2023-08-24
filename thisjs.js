@@ -54,7 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		parallaxImages.style.top = -offset + 'px';
 	};
 
-	if(parallaxImages) {window.addEventListener('scroll', movePictureUp);}
+	if (parallaxImages) {
+		window.addEventListener('scroll', movePictureUp);
+	}
 
 	function showCard() {
 		cards.forEach((card) => {
@@ -184,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				clearTimeout(timeoutt);
 				setTimeout(() => {
 					timeout = setTimeout(textAnimation, speed);
-				}, 8000);
+				}, 15000);
 			} else {
 				clearTimeout(timeoutt);
 				timeoutt = setTimeout(textAnimation, speed);
@@ -210,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				clearTimeout(timeoutt);
 				setTimeout(() => {
 					timeout = setTimeout(textAnimation2, speed);
-				}, 8000);
+				}, 15000);
 			} else {
 				clearTimeout(timeoutt);
 				timeoutt = setTimeout(textAnimation2, speed);
@@ -235,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				clearTimeout(timeoutt);
 				setTimeout(() => {
 					timeout = setTimeout(textAnimation3, speed);
-				}, 8000);
+				}, 15000);
 			} else {
 				clearTimeout(timeoutt);
 				timeoutt = setTimeout(textAnimation3, speed);
