@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				document.getElementById('preloader').style.display = 'none';
 				// document.getElementById('content').style.visibility = 'visible';
 			}, 100); // Opóźnienie przed ukryciem preloadera
-		}, 1500); // Czas w milisekundach - w tym przykładzie 3 sekundy
+		}, 1500); // Czas w milisekundach - w tym przykładzie 1.5 s
 	});
 	const loader = document.querySelector('.loader');
 
