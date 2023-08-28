@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			setTimeout(function () {
 				document.getElementById('preloader').style.display = 'none';
 				// document.getElementById('content').style.visibility = 'visible';
-			}, 500); // Opóźnienie przed ukryciem preloadera
+			}, 100); // Opóźnienie przed ukryciem preloadera
 		}, 1500); // Czas w milisekundach - w tym przykładzie 3 sekundy
 	});
 	const loader = document.querySelector('.loader');
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let pvalue = loader.textContent;
 
 	let index = 0;
-	let speed = 80;
+	let speed = 60;
 	let timeout;
 
 	const writingAnimation = () => {
