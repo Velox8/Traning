@@ -35,7 +35,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	opacity: 1;
-	transition: opacity 1s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 	z-index: 9999;
 }
 
@@ -46,6 +46,7 @@ body {
 	display: flex;
 }
 .loader {
+	text-align: center;
 	font-size: 60px;
 }
 .white-block {
