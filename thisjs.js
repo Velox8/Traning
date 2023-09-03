@@ -1558,12 +1558,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	progressBarLabel.addEventListener('input', function () {
 		let width2 = progressBarLabel.value;
 		width2 = Math.max(Math.min(width2, 260), 0);
-	
+
 		progressBar.style.width = (width2 / 260) * 100 + '%';
 		progressBarLabel.value = progressBarLabel.value.replace(/[^0-9]/g, '');
 		calculateBMI();
 	});
-	
 
 	function updateProgressBar2(event) {
 		let containerWidth = progressBarContainer2.offsetWidth;
@@ -1572,29 +1571,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			clickX = event.touches[0].clientX;
 		}
 		clickX -= progressBarContainer2.getBoundingClientRect().left;
-	
+
 		let width = (clickX / containerWidth) * 100;
 		width = Math.max(Math.min(width, 100), 0);
-	
+
 		progressBar2.style.width = width + '%';
 		progressBarLabel2.value = Math.round((width / 100) * 260);
-	
+
 		calculateBMI();
 	}
-	
+
 	progressBarLabel2.addEventListener('input', function () {
 		let width2 = progressBarLabel2.value;
 		width2 = Math.max(Math.min(width2, 260), 0);
-	
+
 		progressBar2.style.width = (width2 / 260) * 100 + '%';
 		progressBarLabel2.value = progressBarLabel2.value.replace(/[^0-9]/g, '');
 		calculateBMI();
 	});
-	
 
-
-
-updateProgressBar2()
 	function calculateBMI() {
 		const weight = parseFloat(progressBarLabel2.value);
 		const height = parseFloat(progressBarLabel.value) / 100;
@@ -1618,7 +1613,7 @@ updateProgressBar2()
 	progressBarLabel.addEventListener('input', function () {
 		calculateBMI();
 	});
-	
+
 	progressBarLabel2.addEventListener('input', function () {
 		calculateBMI();
 	});
