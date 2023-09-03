@@ -1117,6 +1117,14 @@ a {
 	text-align: center;
 	color: white;
 }
+.progress-bar-label:focus {
+	outline: red;
+	border: 1px solid red;
+}
+.progress-bar-label2:focus {
+	outline: red;
+	border: 1px solid red;
+}
 .progress-bar-container2 {
 	position: relative;
 	top: 100px;
@@ -2290,9 +2298,6 @@ p {
 		width: 60%;
 		font-size: 20px;
 	}
-	
-	
-
 
 	.calc {
 		display: flex;
@@ -2408,7 +2413,6 @@ p {
 		background-color: rgba(0, 0, 0, 0.898);
 	}
 
-
 	/* .progress-bar-lebel
 	{
 		
@@ -2489,7 +2493,6 @@ p {
 		width: 90% !important;
 		min-width: 90%;
 		max-width: 90% !important;
-		
 	}
 	.howCard {
 		margin-top: 50px;
@@ -2498,14 +2501,13 @@ p {
 		height: 650px;
 	}
 	.howCardText {
-		
 		height: 650px;
 	}
 	.howCardButton {
 		position: absolute;
 		top: -26px;
 	}
-	.howCardP{
+	.howCardP {
 		margin-top: 150px;
 	}
 	.h2calories {
@@ -2840,7 +2842,8 @@ p {
 		line-height: 1.5;
 		color: #fbf5f5;
 		z-index: 20;
-	}.sectionBmi {
+	}
+	.sectionBmi {
 		display: flex;
 		justify-content: center;
 		background-image: none;
@@ -2862,22 +2865,17 @@ p {
 		font-size: 20px;
 	}
 	.label-container {
-		
 		top: 0px;
 		left: 60%;
-	
 	}
+
 	.label-container .progress-bar-label {
 		width: 100px;
-
 	}
 	.label-container2 {
-	
 		top: 100px;
 		left: 60%;
 		transform: translateX(-50%);
-	
-	
 	}
 	.label-container2 .progress-bar-label2 {
 		width: 100px;
@@ -2890,7 +2888,7 @@ p {
 		min-width: 230px;
 	}
 
-/* 
+	/* 
 	.label-container {
 		
 		top: 0px;
@@ -3018,7 +3016,6 @@ p {
 		min-width: 60%;
 	}
 	.howCardText {
-		
 		clip-path: none;
 	}
 
@@ -3274,7 +3271,6 @@ p {
 		/* justify-content: center; */
 		/* align-items: center; */
 		max-width: 69%;
-	
 	}
 
 	/* .progress-bar-container {
@@ -3302,7 +3298,7 @@ p {
 		min-width: 100%;
 		max-width: 100%;
 	}
-	
+
 	/* ffmi card  */
 	.card {
 		width: 60%;
