@@ -258,6 +258,41 @@ body {
 	overflow: hidden;
 	z-index: 1;
 }
+.sendMe {
+	position: fixed;
+	top: 100px;
+	right: 20px;
+	margin: 10px;
+	z-index: 21;
+	transition: transform 0.5s;
+}
+.sendMe:hover {
+	transform: scale(1.2);
+}
+
+.callMe {
+	position: fixed;
+	top: 165px;
+	margin: 10px;
+	right: 20px;
+
+	z-index: 21;
+	transition: transform 0.5s;
+}
+.callMe:hover {
+	transform: scale(1.2);
+}
+.callMe .fa-phone {
+	font-size: 2rem;
+
+	color: #d2c4c4;
+	z-index: 21;
+}
+.sendMe .fa-brands {
+	font-size: 2rem;
+	color: #d2c4c4;
+	z-index: 21;
+}
 .containerHeader-article {
 	height: 650px;
 }
@@ -710,12 +745,17 @@ body {
 	left: 0;
 	top: 0;
 }
+
 .article .article-container .article-box .article-h2 {
 	text-align: center;
 	align-self: center;
 	margin-top: 60px;
 	padding: 10px;
 	font-size: 3rem;
+}
+.article .article-container .article-box a {
+	font-size: 1rem;
+	color: #000;
 }
 
 .article .article-container .article-box .invest {
@@ -3191,6 +3231,41 @@ p {
 }
 
 @media (max-width: 1068px) {
+	.sendMe {
+		position: fixed;
+		top: 29px;
+		left: 20px;
+		margin: 10px;
+		z-index: 21;
+		transition: transform 0.5s;
+	}
+	.sendMe:hover {
+		transform: scale(1);
+	}
+
+	.callMe {
+		position: fixed;
+		top: 89px;
+		margin: 10px;
+		left: 20px;
+
+		z-index: 21;
+		transition: transform 0.5s;
+	}
+	.callMe:hover {
+		transform: scale(1);
+	}
+	.callMe .fa-phone {
+		font-size: 1.5rem;
+
+		color: #d2c4c4;
+		z-index: 21;
+	}
+	.sendMe .fa-brands {
+		font-size: 1.5rem;
+		color: #d2c4c4;
+		z-index: 21;
+	}
 	.p-header {
 		width: 90%;
 		left: 5%;
